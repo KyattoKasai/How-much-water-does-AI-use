@@ -7,9 +7,9 @@
 	"scripts": {
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist --repo https://github.com/KyattoKasai/How-much-water-does-AI-use.git",
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview"
+		"dev": "vite --open /app.html",
+		"build": "vite build && node scripts/prepare-pages.js",
+		"preview": "vite preview --open /app.html"
 	},
 	"dependencies": {
 		"react": "^18.3.1",
