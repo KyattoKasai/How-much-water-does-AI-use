@@ -1,12 +1,12 @@
 {
 	"name": "ripple-ai-water-estimator",
-	"homepage": "https://github.com/KyattoKasai/How-much-water-does-AI-use",
+	"homepage": "https://kyattokasai.github.io/How-much-water-does-AI-use/",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
 	"scripts": {
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -d dist --repo https://github.com/KyattoKasai/How-much-water-does-AI-use.git",
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview"
